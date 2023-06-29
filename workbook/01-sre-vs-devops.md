@@ -12,7 +12,8 @@ class SRE implements DevOps {
   configureSLO(sli: SLI[]): void; // 100% reliability is not the goal, error budgets
   minimizeToil(toAutomate: Toil): void; // toil is not the job (50% or less), automate this year's job away
   reduceCostOfFailure(mttr: MeanTimeToRepair): void; // proactively uncover problems
-  disableSilos(): void; // @override -- embed with and blur the lines with product developers
+  unifyTooling(): void; // SRE and product teams should use the same tools
+  disableSilos(): void; // @override -- embed with and blur the lines with product developers, shared ownership
 }
 ```
 
