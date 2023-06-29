@@ -39,3 +39,23 @@ Change management best practices:
 - Implement progressive rollouts
 - Quickly and accurately detecting problems
 - Roll back changes safely when problems arise
+
+### Capacity is critical to availability
+
+Steps mandatory to capacity planning:
+
+- An accurate organic (natural product adoption and usage by customers) demand forecast, which extends beyond the lead time required for acquiring capacity
+- An accurate incorporation of inorganic (events like feature launches, marketing campaigns, or other business-driven changes) demand sources into the demand forecast
+- Regular load testing of the system to correlate raw capacity (servers, disks, and so on) to service capacity
+
+### Provisioning combines both change management and capacity planning
+
+Provisioning must be conducted quickly and only when necessary, as capacity is expensive. Adding new capacity often involves spinning up a new instance, making significant modification to existing systems and validating that the new capacity performs and delivers correct results, thus it is risky.
+
+### Efficient use of resources is important any time a service cares about money.
+
+Resource use is a function of load, capacity, and efficiency. SREs predict demand, provision capacity, and can modify the software.
+
+ > At some point, a slowing system stops serving, which corresponds to infinite slowness.
+ 
+ SREs provision and thus are keenly interested in a service’s performance. 
