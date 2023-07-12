@@ -1,4 +1,4 @@
-# SRE intro
+# Hope is not a strategy
 
 SREs main categories:
 
