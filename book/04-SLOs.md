@@ -70,3 +70,23 @@ Strategies:
 - standardize indicator definitions, eg intervals, frequency.
 
 ## Objectives in practice
+
+An example that takes the shape of a performance curve and variations in workload into consideration:
+
+```
+• 90.0% of requests will complete in <1ms
+• 99.0% of requests with payload <1KB will complete in <10ms
+• 99.9% of requests with payload <1KB will complete in <100ms
+```
+
+### Choosing targets
+
+Not purely technical because the business should be reflected in the SLI/SLO/SLA. 
+
+- Don't lock yourself into unrealistic expectations by basing a target on current performance.
+- Keep it simple -- complex SLIs are hard to reason about.
+- Less is more -- choose just enough SLOs to provide good coverage of the system. 
+- Better to start with a loose target than a strict one -- refine SLOs as you learn
+
+> Defend the SLOs you pick: if you can’t ever win a conversation about priorities by quoting a particular SLO, it’s probably not worth having that SLO. SLOs can—and should—be a major driver in prioritizing work for SREs and product developers, because they reflect what users care about. A good SLO is a helpful, legitimate forcing function for a development team. Using tighter internal SLOs than the SLO advertised to users gives you room to respond to chronic problems before they become visible externally.
+
